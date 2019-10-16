@@ -1,6 +1,9 @@
-import taskCard from './make-task';
+import taskCard from './get-tasks/create-task';
 import {mainFilterElement, boardTasksElement} from './constants';
-import {readyFilterList, generateTaskCardData, generateNumber} from './data';
+import {generateNumber} from "./helpers";
+import {generateTaskCardData} from "./get-tasks/task-data";
+import {readyFilterList} from "./get-filters/filter-data";
+
 
 const renderFilterList = (filters) => {
   mainFilterElement.innerHTML = ``;
